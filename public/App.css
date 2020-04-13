@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   font-weight: bolder;
 }
 
@@ -20,6 +20,10 @@
 }
 a {
   text-decoration: none;
+  transition: 1s;
+}
+a:hover {
+  text-decoration: underline;
 }
 .App-arch {
   background-color: #f7f7f7;
@@ -58,20 +62,18 @@ a {
 }
 .bio {
   text-align: center;
-  font-weight: lighter;
 }
 
 .landing-projects {
-  text-align: center;
+  max-width: 750px;
   margin: 15px 15px 15px 15px;
 }
 
 footer {
-  position: absolute;
   text-align: center;
+  left: 0;
   bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+  right: 0;
 }
 @keyframes App-logo-spin {
   from {

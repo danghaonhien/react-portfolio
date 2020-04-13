@@ -1,21 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(20),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-
+import LandingGrid from "./LandingGrid";
 const Landing = () => {
-  const classes = useStyles();
   return (
     <section>
       <div className='container'>
@@ -30,23 +16,8 @@ const Landing = () => {
         <img src='' alt='' />
         <h1>Nhien Dang</h1>
         <h3>Architect can Code</h3>
-      </div>
-      <div className='landing-projects'>
-        <div className={classes.root}>
-          <Grid container spacing={2}>
-            <Grid item xl={3}>
-              <Paper className={classes.paper}>xl=3</Paper>
-            </Grid>
-            <Grid item xl={3}>
-              <Paper className={classes.paper}>xl=3</Paper>
-            </Grid>
-            <Grid item xl={3}>
-              <Paper className={classes.paper}>xl=3</Paper>
-            </Grid>
-            <Grid item xl={3}>
-              <Paper className={classes.paper}>xl=3</Paper>
-            </Grid>
-          </Grid>
+        <div className='landing-projects'>
+          <LandingGrid />
         </div>
       </div>
     </section>
