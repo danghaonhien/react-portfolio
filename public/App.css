@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+a {
+  text-decoration: none;
+}
+.App-arch {
+  background-color: #f7f7f7;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(30px + 2vmin);
+  color: #dec79b;
+  word-break: break-all;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.App-arch:hover {
+  opacity: 1;
+}
+
+.App-code {
+  background-color: #f7f7f7;
+  min-height: 50vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(30px + 2vmin);
+  color: #18181e;
+  word-break: break-all;
+  border-left: ;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.App-code:hover {
+  opacity: 1;
+}
+.bio {
+  text-align: center;
+  font-weight: lighter;
+}
+
+.landing-projects {
+  text-align: center;
+  margin: 15px 15px 15px 15px;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
