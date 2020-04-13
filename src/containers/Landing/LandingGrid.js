@@ -24,27 +24,27 @@ const LandingGrid = (props) => {
           <div className={classes.root}>
             <Grid
               container
-              spacing={4}
-              direction='row'
+              spacing={5}
               alignItems='center'
-              justify='center'
+              alignContent='center'
+              justifyContent='center'
             >
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3}>
                 <Paper className={classes.paper} elevation={1}>
                   <StyledCard>Card 1</StyledCard>
                 </Paper>
               </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3}>
                 <Paper className={classes.paper} elevation={1}>
                   <StyledCard>Card 1</StyledCard>
                 </Paper>
               </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3}>
                 <Paper className={classes.paper} elevation={1}>
                   <StyledCard>Card 1</StyledCard>
                 </Paper>
               </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3}>
                 <Paper className={classes.paper} elevation={1}>
                   <StyledCard>Card 1</StyledCard>
                 </Paper>

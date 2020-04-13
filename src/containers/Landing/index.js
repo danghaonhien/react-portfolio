@@ -16,9 +16,9 @@ const Landing = () => {
         <img src='' alt='' />
         <h1>Nhien Dang</h1>
         <h3>Architect can Code</h3>
-        <div className='landing-projects'>
-          <LandingGrid />
-        </div>
+      </div>
+      <div className='landing-projects'>
+        <LandingGrid />
       </div>
     </section>
   );

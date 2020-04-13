@@ -4,6 +4,11 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+nav {
+  background-color: #18181e;
+  color: #f7f7f7;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
 
 .container {
   display: grid;
@@ -34,7 +39,6 @@ a:hover {
   font-size: calc(30px + 2vmin);
   color: #dec79b;
   word-break: break-all;
-  text-decoration: none;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -52,8 +56,6 @@ a:hover {
   font-size: calc(30px + 2vmin);
   color: #18181e;
   word-break: break-all;
-  border-left: ;
-  text-decoration: none;
   opacity: 0.6;
   transition: 0.3s;
 }
@@ -65,7 +67,8 @@ a:hover {
 }
 
 .landing-projects {
-  max-width: 750px;
+  /* max-width: 750px; */
+
   margin: 15px 15px 15px 15px;
 }
 
