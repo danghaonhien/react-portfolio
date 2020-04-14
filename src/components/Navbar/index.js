@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-
+import Divider from "@material-ui/core/Divider";
 import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
 import Menu from "@material-ui/core/Menu";
@@ -37,31 +37,35 @@ export default function Navbar() {
         >
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/'>
+            <Link to='/' className='navLink'>
               <h3> Home</h3>
             </Link>
           </MenuItem>
+          <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Architecture'>
+            <Link to='/Architecture' className='navLink'>
               <h3> Architecture Portfolio</h3>
             </Link>
           </MenuItem>
+          <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Code'>
+            <Link to='/Code' className='navLink'>
               <h3>Coding Portfolio</h3>
             </Link>
           </MenuItem>
+          <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Architecture'>
+            <Link to='/Architecture' className='navLink'>
               <h3> About</h3>
             </Link>
           </MenuItem>
+          <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Architecture'>
+            <Link to='/Architecture' className='navLink'>
               <h3> Contact</h3>
             </Link>
           </MenuItem>

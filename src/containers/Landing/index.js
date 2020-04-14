@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LandingGrid from "./LandingGrid";
+import Bio from "./Bio";
+import Box from "@material-ui/core/Box";
+import ScheduleIcons from "../../components/Icons/ScheduleIcons";
 const Landing = () => {
   return (
     <section>
@@ -12,11 +15,15 @@ const Landing = () => {
           <h1>Tech</h1>
         </Link>
       </div>
-      <div className='bio'>
-        <img src='' alt='' />
-        <h1>Nhien Dang</h1>
-        <h3>Architect can Code</h3>
-      </div>
+      <ScheduleIcons />
+      <Box
+        alignItems='center'
+        alignContent='center'
+        justifyContent='center'
+        display='block'
+      >
+        <Bio />
+      </Box>
       <div className='landing-projects'>
         <LandingGrid />
       </div>

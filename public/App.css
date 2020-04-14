@@ -5,11 +5,14 @@
   font-family: "Roboto", sans-serif;
 }
 nav {
-  background-color: #18181e;
+  background-color: #212121;
   color: #f7f7f7;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
-
+.navLink {
+  color: #212121;
+  text-align: center;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,6 +32,19 @@ a {
 }
 a:hover {
   text-decoration: underline;
+}
+.LandingPhoto {
+  width: 250px;
+  height: 250px;
+  opacity: 0.5;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 100%;
+}
+.LandingPhoto:hover {
+  opacity: 0.5;
 }
 .App-arch {
   background-color: #f7f7f7;
@@ -54,7 +70,7 @@ a:hover {
   align-items: center;
   justify-content: flex-start;
   font-size: calc(30px + 2vmin);
-  color: #18181e;
+  color: #212121;
   word-break: break-all;
   opacity: 0.6;
   transition: 0.3s;
@@ -64,6 +80,21 @@ a:hover {
 }
 .bio {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: calc(10px + 1vmin);
+  color: #212121;
+}
+.bio h1 {
+  font-size: calc(20px + 1vmin);
+  font-weight: 400;
+  font-family: "Gotu", sans-serif;
+}
+.bio h3 {
+  margin-top: 10px;
+  font-size: calc(10px + 1vmin);
+  font-weight: 400;
+  font-family: "Gotu", sans-serif;
 }
 
 .landing-projects {
@@ -78,11 +109,29 @@ footer {
   bottom: 0;
   right: 0;
 }
-@keyframes App-logo-spin {
-  from {
+.icon-spin {
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }

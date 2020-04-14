@@ -27,7 +27,6 @@ const LandingGrid = (props) => {
               spacing={5}
               alignItems='center'
               alignContent='center'
-              justifyContent='center'
             >
               <Grid item xs={12} sm={12} md={6} lg={3} xl={3}>
                 <Paper className={classes.paper} elevation={1}>
