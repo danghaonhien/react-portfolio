@@ -15,11 +15,10 @@ const Landing = () => {
           <h1>Tech</h1>
         </Link>
       </div>
-      <Box alignItems='center'>
-        <div className='icon-spin'>
-          <ScheduleIcons />
-        </div>
-      </Box>
+
+      <div className='icon-spin'>
+        <ScheduleIcons />
+      </div>
 
       <Box
         alignItems='center'
@@ -29,6 +28,9 @@ const Landing = () => {
       >
         <Bio />
       </Box>
+      <div className='icon-spin'>
+        <ScheduleIcons />
+      </div>
       <div className='landing-projects'>
         <LandingGrid />
       </div>

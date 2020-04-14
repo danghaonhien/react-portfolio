@@ -45,7 +45,7 @@ export default function Navbar() {
           <MenuItem onClick={handleClose}>
             {" "}
             <Link to='/Architecture' className='navLink'>
-              <h3> Architecture Portfolio</h3>
+              <h3> Architectural Portfolio</h3>
             </Link>
           </MenuItem>
           <Divider variant='inset' component='li' />

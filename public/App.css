@@ -103,6 +103,8 @@ a:hover {
 }
 
 footer {
+  font-weight: 400;
+  font-family: "Gotu", sans-serif;
   text-align: center;
   left: 0;
   bottom: 0;
@@ -112,4 +114,11 @@ footer {
   margin: 30px;
   opacity: 0.15;
   text-align: center;
+}
+.nextButton {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.nextButton:hover {
+  opacity: 1;
 }
