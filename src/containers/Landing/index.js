@@ -15,7 +15,12 @@ const Landing = () => {
           <h1>Tech</h1>
         </Link>
       </div>
-      <ScheduleIcons />
+      <Box alignItems='center'>
+        <div className='icon-spin'>
+          <ScheduleIcons />
+        </div>
+      </Box>
+
       <Box
         alignItems='center'
         alignContent='center'

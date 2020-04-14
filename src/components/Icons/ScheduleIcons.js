@@ -1,15 +1,10 @@
 import React from "react";
-import Box from "@material-ui/core/Box";
-import ScheduleIcon from "@material-ui/icons/Schedule";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 
 const ScheduleIcons = () => {
-  return (
-    <Box>
-      <div className='icon-spin'>
-        <ScheduleIcon />
-      </div>
-    </Box>
-  );
+  return <FontAwesomeIcon icon={faCircleNotch} spin />;
 };
 
 export default ScheduleIcons;
