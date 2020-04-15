@@ -10,7 +10,9 @@ import Typography from "@material-ui/core/Typography";
 import ChevronRightSharpIcon from "@material-ui/icons/ChevronRightSharp";
 
 const useStyles = makeStyles({
-  root: {},
+  root: {
+    fontFamily: "Gotu, san-serif",
+  },
 });
 
 export default function StyledCard(props) {
@@ -19,9 +21,12 @@ export default function StyledCard(props) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia component='img' height='140' image={props.img} />
+        <CardMedia component='img' height='200' image={props.img} />
         <CardContent>
-          <h2>{props.title}</h2>
+          <Typography variant='h6' component='h6'>
+            {props.title}
+          </Typography>
+
           <Typography variant='body2' color='textSecondary' component='p'>
             {props.content}
           </Typography>
