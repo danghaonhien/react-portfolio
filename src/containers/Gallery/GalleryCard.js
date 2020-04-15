@@ -11,9 +11,6 @@ const useStyles = makeStyles({
   root: {
     fontFamily: "Gotu, san-serif",
   },
-  media: {
-    height: 300,
-  },
 });
 
 export default function GalleryCard(props) {

@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 // import Paper from "@material-ui/core/Paper"
 import Grid from "@material-ui/core/Grid";
-import projects from "./../Portfolio/projects";
+import images from "./../Portfolio/images";
 import GalleryCard from "./GalleryCard";
 // import Swiper from "react-id-swiper"
 import "swiper/css/swiper.css";
@@ -20,31 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const GalleryGrid = (props) => {
   const classes = useStyles();
-  //   const params = {
-  //     effect: "coverflow",
-  //     grabCursor: true,
-  //     centeredSlides: true,
-  //     slidesPerView: "auto",
 
-  //     coverflowEffect: {
-  //       rotate: 50,
-  //       stretch: 0,
-  //       depth: 150,
-  //       modifier: 1,
-  //       slideShadows: true,
-  //     },
-  //     pagination: {
-  //       el: ".swiper-pagination.customized-swiper-pagination",
-  //       type: "bullets",
-  //       clickable: true,
-  //     },
-  //     navigation: {
-  //       nextEl: ".swiper-button-next.customized-swiper-button-next",
-  //       prevEl: ".swiper-button-prev.customized-swiper-button-prev",
-  //     },
-
-  //     spaceBetween: 30,
-  //   }
   return (
     <div className={classes.root}>
       <Typography variant='h5' component='h5' className={classes.header}>
@@ -54,34 +30,52 @@ const GalleryGrid = (props) => {
         <div className={classes.root}>
           <Grid container spacing={2} alignItems='center' alignContent='center'>
             <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <GalleryCard
-                title={projects[0].title}
-                img={projects[0].imgURL}
-                content={projects[0].content}
-              />
+              <GalleryCard img={images[0].imgURL} />
             </Grid>
             <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <GalleryCard
-                title={projects[1].title}
-                img={projects[1].imgURL}
-                content={projects[1].content}
-              />
+              <GalleryCard img={images[1].imgURL} />
             </Grid>
             <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <GalleryCard
-                title={projects[2].title}
-                img={projects[2].imgURL}
-                content={projects[2].content}
-              />
+              <GalleryCard img={images[2].imgURL} />
             </Grid>
             <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-              <GalleryCard
-                title={projects[3].title}
-                img={projects[3].imgURL}
-                content={projects[3].content}
-              />
+              <GalleryCard img={images[3].imgURL} />
             </Grid>
           </Grid>
+
+          <div>
+            <Grid
+              container
+              spacing={2}
+              alignItems='center'
+              alignContent='center'
+            >
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <GalleryCard img={images[0].imgURL} />
+              </Grid>
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <GalleryCard img={images[1].imgURL} />
+              </Grid>
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+                <GalleryCard img={images[1].imgURL} />
+              </Grid>
+            </Grid>
+          </div>
+          <div>
+            <Grid
+              container
+              spacing={2}
+              alignItems='center'
+              alignContent='center'
+            >
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <GalleryCard img={images[0].imgURL} />
+              </Grid>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <GalleryCard img={images[1].imgURL} />
+              </Grid>
+            </Grid>
+          </div>
         </div>
       </Zoom>
     </div>
