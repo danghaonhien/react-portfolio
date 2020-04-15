@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LandingGrid from "./LandingGrid";
 import Bio from "./Bio";
-import Box from "@material-ui/core/Box";
+
 import ScheduleIcons from "../../components/Icons/ScheduleIcons";
 const Landing = () => {
   return (
@@ -15,19 +15,10 @@ const Landing = () => {
           <h1>Tech</h1>
         </Link>
       </div>
-
       <div className='icon-spin'>
         <ScheduleIcons />
       </div>
-
-      <Box
-        alignItems='center'
-        alignContent='center'
-        justifyContent='center'
-        display='block'
-      >
-        <Bio />
-      </Box>
+      <Bio />
       <div className='icon-spin'>
         <ScheduleIcons />
       </div>

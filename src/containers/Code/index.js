@@ -9,6 +9,7 @@ import "swiper/css/swiper.css";
 import Zoom from "@material-ui/core/Zoom";
 import StyledCard from "./../Landing/StyledCard";
 import ScheduleIcons from "../../components/Icons/ScheduleIcons";
+import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -17,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
+  },
+  header: {
+    margin: 15,
+    textAlign: "center",
   },
 }));
 const Code = (props) => {
@@ -83,7 +88,12 @@ const Code = (props) => {
       <div className='icon-spin'>
         <ScheduleIcons />
       </div>
-
+      <Typography variant='h5' component='h5' className={classes.header}>
+        Coding Portfolio
+      </Typography>
+      <div className='icon-spin'>
+        <ScheduleIcons />
+      </div>
       <div>
         <Zoom in={true}>
           <div className='landing-projects'>

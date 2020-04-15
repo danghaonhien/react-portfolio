@@ -21,7 +21,7 @@ const LandingGrid = (props) => {
   return (
     <div>
       <Zoom in={true}>
-        <div className='landing-projects'>
+        <div>
           <div className={classes.root}>
             <Grid
               container

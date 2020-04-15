@@ -3,6 +3,7 @@ import Navbar from "./../Navbar/index";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Architecture from "./../../containers/Architecture/index";
 import Code from "./../../containers/Code/index";
+import Gallery from "./../../containers/Gallery/index";
 import Landing from "./../../containers/Landing/index";
 import Footer from "./../Footer/index";
 
@@ -21,6 +22,7 @@ const App = (props) => (
           <Switch>
             <Route exact path='/architecture' component={Architecture} />
             <Route exact path='/code' component={Code} />
+            <Route exact path='/gallery' component={Gallery} />
           </Switch>
 
           <Footer />
