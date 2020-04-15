@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     margin: 15,
     textAlign: "center",
   },
+  quote: {
+    top: 0,
+    marginBottom: 15,
+    textAlign: "center",
+  },
 }));
 const Gallery = (props) => {
   const classes = useStyles();
@@ -17,7 +22,7 @@ const Gallery = (props) => {
       <Typography variant='h5' component='h5' className={classes.header}>
         Gallery
       </Typography>
-      <Typography variant='h6' component='h6' className={classes.header}>
+      <Typography variant='h6' component='h6' className={classes.quote}>
         Life through my Lens
       </Typography>
       <GalleryGrid />

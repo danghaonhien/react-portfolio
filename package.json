@@ -19,6 +19,7 @@
     "react-id-swiper": "^3.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
+    "react-spinners": "^0.8.1",
     "react-sticky-footer": "0.1.0-rc3",
     "swiper": "^5.3.7"
   },

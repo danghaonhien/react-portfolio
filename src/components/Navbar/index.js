@@ -65,14 +65,14 @@ export default function Navbar() {
           <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Architecture' className='navLink'>
+            <Link to='/About' className='navLink'>
               <h3> About</h3>
             </Link>
           </MenuItem>
           <Divider variant='inset' component='li' />
           <MenuItem onClick={handleClose}>
             {" "}
-            <Link to='/Architecture' className='navLink'>
+            <Link to='/Contact' className='navLink'>
               <h3> Contact</h3>
             </Link>
           </MenuItem>

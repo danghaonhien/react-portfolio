@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     borderRadius: 0,
     position: "relative",
+    textAlign: "center",
   },
 
   header: {
@@ -107,31 +108,35 @@ const Architecture = (props) => {
                 <StyledCard
                   title={projects[0].title}
                   img={projects[0].imgURL}
+                  content={projects[3].content}
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                 <StyledCard
                   title={projects[1].title}
                   img={projects[1].imgURL}
+                  content={projects[3].content}
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                 <StyledCard
                   title={projects[2].title}
                   img={projects[2].imgURL}
+                  content={projects[3].content}
                 />
               </Grid>
               <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                 <StyledCard
                   title={projects[3].title}
                   img={projects[3].imgURL}
+                  content={projects[3].content}
                 />
               </Grid>
             </Grid>
           </div>
         </Zoom>
-        ;
       </div>
+      <br />
     </div>
   );
 };

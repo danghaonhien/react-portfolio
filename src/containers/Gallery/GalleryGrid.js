@@ -8,8 +8,6 @@ import GalleryCard from "./GalleryCard";
 import "swiper/css/swiper.css";
 import Zoom from "@material-ui/core/Zoom";
 
-// import ScheduleIcons from "../../components/Icons/ScheduleIcons"
-import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   root: { margin: "auto", borderRadius: 0, position: "relative" },
 
@@ -23,9 +21,6 @@ const GalleryGrid = (props) => {
 
   return (
     <div className={classes.root}>
-      <Typography variant='h5' component='h5' className={classes.header}>
-        Gallery
-      </Typography>
       <Zoom in={true}>
         <div className={classes.root}>
           <Grid container spacing={2} alignItems='center' alignContent='center'>
@@ -78,6 +73,7 @@ const GalleryGrid = (props) => {
           </div>
         </div>
       </Zoom>
+      <br />
     </div>
   );
 };
