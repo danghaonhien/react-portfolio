@@ -8,7 +8,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import ChevronRightSharpIcon from "@material-ui/icons/ChevronRightSharp";
-
+import { useSoftRiseShadowStyles } from "@mui-treasury/styles/shadow/softRise";
 const useStyles = makeStyles({
   root: {
     fontFamily: "Gotu, san-serif",
@@ -17,11 +17,16 @@ const useStyles = makeStyles({
 
 export default function StyledCard(props) {
   const classes = useStyles();
-
+  const styles = useSoftRiseShadowStyles({});
   return (
-    <Card className={classes.root}>
+    <Card className={(classes.root, styles.root)}>
       <CardActionArea>
-        <CardMedia component='img' height='200' image={props.img} />
+        <CardMedia
+          classes={styles}
+          component='img'
+          height='200'
+          image={props.img}
+        />
         <CardContent>
           <Typography variant='h6' component='h6'>
             {props.title}

@@ -12,13 +12,11 @@ import ScheduleIcons from "../../components/Icons/ScheduleIcons";
 import Typography from "@material-ui/core/Typography";
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    margin: "auto",
+    borderRadius: 0,
+    position: "relative",
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
+
   header: {
     margin: 15,
     textAlign: "center",
@@ -94,57 +92,42 @@ const Code = (props) => {
       <div className='icon-spin'>
         <ScheduleIcons />
       </div>
-      <div>
+      <div className={classes.root}>
         <Zoom in={true}>
-          <div className='landing-projects'>
-            <div className={classes.root}>
-              <Grid
-                container
-                spacing={5}
-                alignItems='center'
-                alignContent='center'
-              >
-                <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                  <Paper className={classes.paper} elevation={1}>
-                    <StyledCard
-                      title={projects[0].title}
-                      img={projects[0].imgURL}
-                      content={projects[0].content}
-                    />
-                  </Paper>
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                  <Paper className={classes.paper} elevation={1}>
-                    <StyledCard
-                      title={projects[1].title}
-                      img={projects[1].imgURL}
-                      content={projects[1].content}
-                    />
-                  </Paper>
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                  <Paper className={classes.paper} elevation={1}>
-                    <StyledCard
-                      title={projects[2].title}
-                      img={projects[2].imgURL}
-                      content={projects[2].content}
-                    />
-                  </Paper>
-                </Grid>
-                <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                  <Paper className={classes.paper} elevation={1}>
-                    <StyledCard
-                      title={projects[3].title}
-                      img={projects[3].imgURL}
-                      content={projects[3].content}
-                    />
-                  </Paper>
-                </Grid>
+          <div className={classes.root}>
+            <Grid
+              container
+              spacing={3}
+              alignItems='center'
+              alignContent='center'
+            >
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <StyledCard
+                  title={projects[0].title}
+                  img={projects[0].imgURL}
+                />
               </Grid>
-            </div>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <StyledCard
+                  title={projects[1].title}
+                  img={projects[1].imgURL}
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <StyledCard
+                  title={projects[2].title}
+                  img={projects[2].imgURL}
+                />
+              </Grid>
+              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+                <StyledCard
+                  title={projects[3].title}
+                  img={projects[3].imgURL}
+                />
+              </Grid>
+            </Grid>
           </div>
         </Zoom>
-        ;
       </div>
     </div>
   );

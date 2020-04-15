@@ -6,7 +6,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-
+import { useSoftRiseShadowStyles } from "@mui-treasury/styles/shadow/softRise";
 const useStyles = makeStyles({
   root: {
     fontFamily: "Gotu, san-serif",
@@ -18,11 +18,12 @@ const useStyles = makeStyles({
 
 export default function ArchCard(props) {
   const classes = useStyles();
-
+  const styles = useSoftRiseShadowStyles({});
   return (
-    <Card className={classes.root}>
+    <Card className={(classes.root, styles.root)}>
       <CardActionArea>
         <CardMedia
+          classes={styles}
           className={classes.media}
           component='img'
           image={props.img}

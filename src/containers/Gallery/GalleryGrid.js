@@ -53,10 +53,10 @@ const GalleryGrid = (props) => {
               <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                 <GalleryCard img={images[0].imgURL} />
               </Grid>
-              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+              <Grid item xs={12} sm={12} md={8} lg={8} xl={4}>
                 <GalleryCard img={images[1].imgURL} />
               </Grid>
-              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
+              <Grid item xs={12} sm={12} md={8} lg={8} xl={4}>
                 <GalleryCard img={images[1].imgURL} />
               </Grid>
             </Grid>
@@ -68,10 +68,10 @@ const GalleryGrid = (props) => {
               alignItems='center'
               alignContent='center'
             >
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={9} lg={9} xl={9}>
                 <GalleryCard img={images[0].imgURL} />
               </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
+              <Grid item xs={12} sm={12} md={9} lg={9} xl={9}>
                 <GalleryCard img={images[1].imgURL} />
               </Grid>
             </Grid>
