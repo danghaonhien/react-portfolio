@@ -126,3 +126,17 @@ footer {
 }
 .customized-swiper-button-next {
 }
+.createCard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 4rem auto;
+  max-width: 90%;
+}
+.cardLandingRender {
+  text-align: center;
+  max-width: 15rem;
+  margin-bottom: 3rem;
+  border-radius: 3px;
+  transition: all 100ms ease-in-out;
+}

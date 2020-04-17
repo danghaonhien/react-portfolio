@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
 }));
+
 const Architecture = (props) => {
   const classes = useStyles();
   const params = {

@@ -19,30 +19,32 @@ export default function StyledCard(props) {
   const classes = useStyles();
   const styles = useSoftRiseShadowStyles({});
   return (
-    <Card className={(classes.root, styles.root)}>
-      <CardActionArea>
-        <CardMedia
-          classes={styles}
-          component='img'
-          height='200'
-          image={props.img}
-        />
-        <CardContent>
-          <Typography variant='h6' component='h6'>
-            {props.title}
-          </Typography>
+    <div className='cardLandingRender'>
+      <Card className={(classes.root, styles.root)}>
+        <CardActionArea>
+          <CardMedia
+            classes={styles}
+            component='img'
+            height='200'
+            image={props.img}
+          />
+          <CardContent>
+            <Typography variant='h6' component='h6'>
+              {props.title}
+            </Typography>
 
-          <Typography variant='body2' color='textSecondary' component='p'>
-            {props.content}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+            <Typography variant='body2' color='textSecondary' component='p'>
+              {props.content}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
 
-      <CardActions className='nextButton'>
-        <Button size='small'>
-          <ChevronRightSharpIcon />
-        </Button>
-      </CardActions>
-    </Card>
+        <CardActions className='nextButton'>
+          <Button size='small'>
+            <ChevronRightSharpIcon />
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 }
