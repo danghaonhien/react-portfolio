@@ -10,6 +10,27 @@ import Zoom from "@material-ui/core/Zoom";
 import StyledCard from "./../Landing/StyledCard";
 import ScheduleIcons from "../../components/Icons/ScheduleIcons";
 import Typography from "@material-ui/core/Typography";
+function createCard(projects) {
+  return (
+    <StyledCard
+      key={projects.id}
+      title={projects.title}
+      img={projects.imgURL}
+      content={projects.content}
+    />
+  );
+}
+
+function HeaderCard(projects) {
+  return (
+    <ArchCard
+      key={projects.id}
+      title={projects.title}
+      img={projects.imgURL}
+      content={projects.content}
+    />
+  );
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -61,27 +82,11 @@ const Architecture = (props) => {
             <Paper className={classes.paper} elevation={1}>
               {" "}
               <Swiper {...params}>
+                <div> {projects.slice(0, 1).map(HeaderCard)}</div>
                 <div>
-                  <ArchCard
-                    title={projects[0].title}
-                    img={projects[0].imgURL}
-                    content={projects[0].content}
-                  />
+                  <div> {projects.slice(1, 2).map(HeaderCard)}</div>
                 </div>
-                <div>
-                  <ArchCard
-                    title={projects[1].title}
-                    img={projects[1].imgURL}
-                    content={projects[1].content}
-                  />
-                </div>
-                <div>
-                  <ArchCard
-                    title={projects[2].title}
-                    img={projects[2].imgURL}
-                    content={projects[2].content}
-                  />
-                </div>
+                <div> {projects.slice(2, 3).map(HeaderCard)}</div>
               </Swiper>
             </Paper>
           </Grid>
@@ -98,43 +103,7 @@ const Architecture = (props) => {
       </div>
       <div className={classes.root}>
         <Zoom in={true}>
-          <div className={classes.root}>
-            <Grid
-              container
-              spacing={3}
-              alignItems='center'
-              alignContent='center'
-            >
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                <StyledCard
-                  title={projects[0].title}
-                  img={projects[0].imgURL}
-                  content={projects[3].content}
-                />
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                <StyledCard
-                  title={projects[1].title}
-                  img={projects[1].imgURL}
-                  content={projects[3].content}
-                />
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                <StyledCard
-                  title={projects[2].title}
-                  img={projects[2].imgURL}
-                  content={projects[3].content}
-                />
-              </Grid>
-              <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-                <StyledCard
-                  title={projects[3].title}
-                  img={projects[3].imgURL}
-                  content={projects[3].content}
-                />
-              </Grid>
-            </Grid>
-          </div>
+          <div className='createCard'>{projects.map(createCard)}</div>
         </Zoom>
       </div>
       <br />

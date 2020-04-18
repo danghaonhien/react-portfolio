@@ -16,7 +16,7 @@ function createCard(projects) {
 const LandingGrid = () => {
   return (
     <Zoom in={true}>
-      <div className='createCard'>{projects.map(createCard)}</div>
+      <div className='createCard'>{projects.slice(0, 4).map(createCard)}</div>
     </Zoom>
   );
 };

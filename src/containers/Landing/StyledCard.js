@@ -19,7 +19,7 @@ export default function StyledCard(props) {
   const classes = useStyles();
   const styles = useSoftRiseShadowStyles({});
   return (
-    <div className='cardLandingRender'>
+    <div className='cardRender'>
       <Card className={(classes.root, styles.root)}>
         <CardActionArea>
           <CardMedia

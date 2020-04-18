@@ -27,5 +27,12 @@ const projects = [
     content:
       "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
   },
+  {
+    id: 5,
+    title: "Project 5",
+    imgURL: "https://picsum.photos/500",
+    content:
+      "Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica",
+  },
 ];
 export default projects;
